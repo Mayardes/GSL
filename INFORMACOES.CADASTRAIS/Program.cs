@@ -1,10 +1,17 @@
 using INFORMACOESCADASTRAIS.Service;
 using INFORMACOESCADASTRAIS.Services;
 using ProductOwner.Microservice.Data;
+using Swashbuckle.AspNetCore.Filters;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
+builder.Services.AddSwaggerGen(options => {
+    options.ExampleFilters();
+});
 
 builder.Services.AddDbContext<CadastroContext>();
 

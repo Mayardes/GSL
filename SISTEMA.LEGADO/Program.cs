@@ -2,6 +2,8 @@ using SISTEMALEGADO.BackgroundServices;
 using SISTEMALEGADO.Data;
 using SISTEMALEGADO.Service;
 using SISTEMALEGADO.Services;
+using Swashbuckle.AspNetCore.Filters;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,11 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDbContext<LegadoContext>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService>();
 
+
+builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
+builder.Services.AddSwaggerGen(options => {
+    options.ExampleFilters();
+});
 //services
 builder.Services.AddScoped<ClienteServices>();
 builder.Services.AddScoped<DepositoServices>();
