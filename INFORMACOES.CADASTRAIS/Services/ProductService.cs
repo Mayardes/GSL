@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using INFORMACOESCADASTRAIS.Model;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using ProductOwner.Microservice.Data;
 using ProductOwner.Microservice.Model;
@@ -16,7 +17,7 @@ namespace INFORMACOESCADASTRAIS.Services
         {
             _dbContext = dbContext;
         }
-        public Task<ProductOfferDetail> SendProductOffer(ProductOfferDetail productOfferDetails)
+        public Task<Cliente> SendModel(Cliente cliente)
         {
             var RabbitMQServer = "localhost";
 
@@ -37,7 +38,7 @@ namespace INFORMACOESCADASTRAIS.Services
                                      autoDelete: false,   //automatic deleted when consumers get message
                                      arguments: null);    //some arguments
 
-                var stringFieldMessage = JsonConvert.SerializeObject(productOfferDetails);
+                var stringFieldMessage = JsonConvert.SerializeObject(cliente);
 
                 var bodyMessage = Encoding.UTF8.GetBytes(stringFieldMessage);
 
@@ -46,7 +47,7 @@ namespace INFORMACOESCADASTRAIS.Services
                                      basicProperties: null,
                                      body: bodyMessage);
 
-                return Task.FromResult(productOfferDetails);
+                return Task.FromResult(cliente);
             }
         }
     }

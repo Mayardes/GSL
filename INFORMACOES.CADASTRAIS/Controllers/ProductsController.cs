@@ -21,7 +21,6 @@ namespace INFORMACOESCADASTRAIS.Controllers
         {
             try
             {
-                productService.SendProductOffer(productOfferDetails);
                 return Ok(productOfferDetails);
             }
             catch (Exception e)

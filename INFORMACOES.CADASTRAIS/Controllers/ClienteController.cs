@@ -49,7 +49,7 @@ namespace INFORMACOESCADASTRAIS.Controllers
             try
             {
                 //var result = await _clienteService.CadastrarAsync(cliente);
-                 await _rabbitMQPublisherService.SendProductOffer(teste);
+                 await _rabbitMQPublisherService.SendModel(cliente);
                 return Ok(cliente);
             }
             catch (Exception e)
