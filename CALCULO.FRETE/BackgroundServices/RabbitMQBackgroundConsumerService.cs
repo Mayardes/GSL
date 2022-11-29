@@ -4,7 +4,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-namespace SISTEMALEGADO.BackgroundServices
+namespace CALCULOFRETE.BackgroundServices
 {
     public class RabbitMQBackgroundConsumerService<T> : BackgroundService
     {

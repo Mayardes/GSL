@@ -1,9 +1,9 @@
 ﻿using Bogus;
 using Bogus.Extensions.Brazil;
-using SISTEMALEGADO.Dto;
+using CALCULOFRETE.Dto;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace SISTEMALEGADO.Controllers.RequestExemples
+namespace CALCULOFRETE.Controllers.RequestExemples
 {
     public class FornecedorAtualizarRequestExamples : IExamplesProvider<FornecedorDto>
     {

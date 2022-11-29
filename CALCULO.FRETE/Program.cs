@@ -1,8 +1,8 @@
-using SISTEMALEGADO.BackgroundServices;
-using SISTEMALEGADO.Data;
-using SISTEMALEGADO.Model;
-using SISTEMALEGADO.Service;
-using SISTEMALEGADO.Services;
+using CALCULOFRETE.BackgroundServices;
+using CALCULOFRETE.Data;
+using CALCULOFRETE.Model;
+using CALCULOFRETE.Service;
+using CALCULOFRETE.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 

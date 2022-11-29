@@ -1,6 +1,6 @@
-﻿using SISTEMALEGADO.Model;
+﻿using CALCULOFRETE.Model;
 
-namespace SISTEMALEGADO.Services
+namespace CALCULOFRETE.Services
 {
     public class UserService : IUserService
     {

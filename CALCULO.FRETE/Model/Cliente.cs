@@ -1,4 +1,4 @@
-﻿namespace SISTEMALEGADO.Model
+﻿namespace CALCULOFRETE.Model
 {
     public class Cliente
     {

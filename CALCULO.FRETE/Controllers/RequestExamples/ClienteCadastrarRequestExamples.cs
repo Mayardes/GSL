@@ -1,9 +1,9 @@
 ﻿using Bogus;
 using Bogus.Extensions.Brazil;
-using SISTEMALEGADO.Model;
+using CALCULOFRETE.Model;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace SISTEMALEGADO.Controllers.RequestExemples
+namespace CALCULOFRETE.Controllers.RequestExemples
 {
     public class ClienteCadastrarRequestExamples : IExamplesProvider<Cliente>
     {

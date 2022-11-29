@@ -1,4 +1,4 @@
-﻿namespace SISTEMALEGADO.Dto
+﻿namespace CALCULOFRETE.Dto
 {
     public class DepositoDto
     {
