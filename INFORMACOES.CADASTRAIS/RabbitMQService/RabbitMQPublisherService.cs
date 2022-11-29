@@ -7,11 +7,9 @@ using System.Text;
 
 namespace INFORMACOESCADASTRAIS.RabbitMQService
 {
-    public class RabbitMQPublisherService
+    public class RabbitMQPublisherService<T> where T : class
     {
-        private readonly CadastroContext _dbContext;
-
-        public Task<Cliente> SendModel(Cliente cliente)
+        public Task<T> SendModel(T modelo)
         {
             var _factory = new ConnectionFactory()
             {
@@ -28,7 +26,7 @@ namespace INFORMACOESCADASTRAIS.RabbitMQService
                                      autoDelete: false,   //automatic deleted when consumers get message
                                      arguments: null);    //some arguments
 
-                var stringFieldMessage = JsonConvert.SerializeObject(cliente);
+                var stringFieldMessage = JsonConvert.SerializeObject(modelo);
 
                 var bodyMessage = Encoding.UTF8.GetBytes(stringFieldMessage);
 
@@ -37,7 +35,7 @@ namespace INFORMACOESCADASTRAIS.RabbitMQService
                                      basicProperties: null,
                                      body: bodyMessage);
 
-                return Task.FromResult(cliente);
+                return Task.FromResult(modelo);
             }
         }
     }

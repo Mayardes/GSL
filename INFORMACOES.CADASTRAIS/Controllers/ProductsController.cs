@@ -8,14 +8,6 @@ namespace INFORMACOESCADASTRAIS.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly RabbitMQPublisherService productService;
-
-        public ProductsController(RabbitMQPublisherService _productService)
-        {
-            productService = _productService;
-        }
-
-
         [HttpPost("sendoffer")]
         public async Task<IActionResult>SendProductOfferAsync(ProductOfferDetail productOfferDetails)
         {

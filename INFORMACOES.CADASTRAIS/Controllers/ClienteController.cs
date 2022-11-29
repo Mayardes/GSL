@@ -3,7 +3,6 @@ using INFORMACOESCADASTRAIS.Model;
 using INFORMACOESCADASTRAIS.RabbitMQService;
 using INFORMACOESCADASTRAIS.Service;
 using Microsoft.AspNetCore.Mvc;
-using ProductOwner.Microservice.Model;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace INFORMACOESCADASTRAIS.Controllers
@@ -13,8 +12,8 @@ namespace INFORMACOESCADASTRAIS.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly ClienteServices _clienteService;
-        private readonly RabbitMQPublisherService _rabbitMQPublisherService;
-        public ClienteController(ClienteServices clienteService, RabbitMQPublisherService rabbitMQPublisherService)
+        private readonly RabbitMQPublisherService<Cliente> _rabbitMQPublisherService;
+        public ClienteController(ClienteServices clienteService, RabbitMQPublisherService<Cliente> rabbitMQPublisherService)
         {
             _clienteService = clienteService;
             _rabbitMQPublisherService = rabbitMQPublisherService;

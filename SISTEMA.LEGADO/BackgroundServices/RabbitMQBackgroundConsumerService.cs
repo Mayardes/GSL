@@ -20,13 +20,11 @@ namespace SISTEMALEGADO.BackgroundServices
         {
              var _factory = new ConnectionFactory()
             {
-                HostName = "localhost"
+                HostName = StaticConfigurationManager.AppSetting["RabbitMqSettings:Host"]
             };
 
-            //open an connection
             _connection = _factory.CreateConnection();
 
-            // create channel  
             _channel = _connection.CreateModel();
               
             //Declare Queue with Name and a few property related to Queue like durabality of msg, auto delete and many more

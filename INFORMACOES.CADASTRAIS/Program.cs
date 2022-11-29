@@ -1,4 +1,5 @@
 using INFORMACOESCADASTRAIS.Data;
+using INFORMACOESCADASTRAIS.Model;
 using INFORMACOESCADASTRAIS.RabbitMQService;
 using INFORMACOESCADASTRAIS.Service;
 using Swashbuckle.AspNetCore.Filters;
@@ -20,7 +21,7 @@ builder.Services.AddScoped<DepositoServices>();
 builder.Services.AddScoped<FornecedorServices>();
 builder.Services.AddScoped<MercadoriaServices>();
 
-builder.Services.AddScoped<RabbitMQPublisherService>();
+builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
