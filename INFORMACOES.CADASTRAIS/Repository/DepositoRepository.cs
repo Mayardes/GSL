@@ -1,7 +1,7 @@
-﻿using INFORMACOESCADASTRAIS.Interfaces;
+﻿using INFORMACOESCADASTRAIS.Data;
+using INFORMACOESCADASTRAIS.Interfaces;
 using INFORMACOESCADASTRAIS.Model;
 using Microsoft.EntityFrameworkCore;
-using ProductOwner.Microservice.Data;
 
 namespace INFORMACOESCADASTRAIS.Repositories
 {

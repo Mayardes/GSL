@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProductOwner.Microservice.Model;
 
-namespace ProductOwner.Microservice.Data
+namespace INFORMACOESCADASTRAIS.Data
 {
     public class CadastroContext : DbContext
     {

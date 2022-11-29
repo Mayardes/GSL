@@ -1,8 +1,6 @@
-﻿using INFORMACOESCADASTRAIS.Model;
-using Microsoft.EntityFrameworkCore;
+﻿using INFORMACOESCADASTRAIS.Data;
+using INFORMACOESCADASTRAIS.Model;
 using Newtonsoft.Json;
-using ProductOwner.Microservice.Data;
-using ProductOwner.Microservice.Model;
 using ProductOwner.Microservice.Utility;
 using RabbitMQ.Client;
 using System.Text;

@@ -1,5 +1,5 @@
-﻿using INFORMACOESCADASTRAIS.Repositories;
-using ProductOwner.Microservice.Data;
+﻿using INFORMACOESCADASTRAIS.Data;
+using INFORMACOESCADASTRAIS.Repositories;
 
 namespace INFORMACOESCADASTRAIS.Service
 {
