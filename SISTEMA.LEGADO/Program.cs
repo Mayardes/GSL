@@ -18,6 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDbContext<LegadoContext>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
+builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
 
 
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());

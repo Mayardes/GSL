@@ -2,6 +2,7 @@
 using ProductUser.Microservice.Utility;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using SISTEMALEGADO.Services;
 using System.Text;
 
 namespace SISTEMALEGADO.BackgroundServices
@@ -12,14 +13,15 @@ namespace SISTEMALEGADO.BackgroundServices
         private IModel _channel;
         private readonly IServiceProvider _serviceProvider;
 
-        public RabbitMQBackgroundConsumerService()
+        public RabbitMQBackgroundConsumerService(IServiceProvider serviceProvider)
         {
             InitRabbitMQ();
+            _serviceProvider = serviceProvider;
         }
 
         private void InitRabbitMQ()
         {
-             var _factory = new ConnectionFactory()
+            var _factory = new ConnectionFactory()
             {
                 HostName = StaticConfigurationManager.AppSetting["RabbitMqSettings:Host"]
             };
@@ -27,7 +29,7 @@ namespace SISTEMALEGADO.BackgroundServices
             _connection = _factory.CreateConnection();
 
             _channel = _connection.CreateModel();
-              
+
             //Declare Queue with Name and a few property related to Queue like durabality of msg, auto delete and many more
             _channel.QueueDeclare(queue: StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueName"], //queue name
                                     durable: true,      //remains active when restarted server ******
@@ -44,7 +46,7 @@ namespace SISTEMALEGADO.BackgroundServices
              {
                  var content = System.Text.Encoding.UTF8.GetString(ea.Body.ToArray());
 
-                var message = Encoding.UTF8.GetString(ea.Body.ToArray());
+                 var message = Encoding.UTF8.GetString(ea.Body.ToArray());
 
                  var data = JsonConvert.DeserializeObject<T>(message);
 
@@ -59,7 +61,10 @@ namespace SISTEMALEGADO.BackgroundServices
         }
         private void Notify(T data)
         {
-            //using(var scope = _serviceProvider.CreateScope(data))
+            var scope = _serviceProvider.CreateScope();
+
+            var notificationServer = scope.ServiceProvider.GetRequiredService<INotificationServer<T>>();
+            notificationServer.NotifyUser(data);
         }
     }
 }
