@@ -34,18 +34,10 @@ namespace SISTEMALEGADO.Controllers
         [SwaggerRequestExample(typeof(Cliente), typeof(ClienteCadastrarRequestExamples))]
         public async Task<IActionResult> CadastrarAsync([FromBody] Cliente cliente)
         {
-            var teste = new ProductOfferDetail()
-            {
-                Id = 1,
-                ProductID = 1,
-                ProductName = "produto teste",
-                ProductOfferDetails = "detalhes do produto"
-            };
-
             try
             {
-                //var result = await _clienteService.CadastrarAsync(cliente);
-                 //await _rabbitMQPublisherService.SendProductOffer(teste);
+                 var result = await _clienteService.CadastrarAsync(cliente);
+
                 return Ok(cliente);
             }
             catch (Exception e)

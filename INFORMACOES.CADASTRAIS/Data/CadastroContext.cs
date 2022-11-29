@@ -1,6 +1,5 @@
 ﻿using INFORMACOESCADASTRAIS.Model;
 using Microsoft.EntityFrameworkCore;
-using ProductOwner.Microservice.Model;
 
 namespace INFORMACOESCADASTRAIS.Data
 {

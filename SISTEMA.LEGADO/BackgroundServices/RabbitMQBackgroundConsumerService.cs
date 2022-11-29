@@ -6,10 +6,11 @@ using System.Text;
 
 namespace SISTEMALEGADO.BackgroundServices
 {
-    public class RabbitMQBackgroundConsumerService : BackgroundService
+    public class RabbitMQBackgroundConsumerService<T> : BackgroundService
     {
         private IConnection _connection;
         private IModel _channel;
+        private readonly IServiceProvider _serviceProvider;
 
         public RabbitMQBackgroundConsumerService()
         {
@@ -43,10 +44,11 @@ namespace SISTEMALEGADO.BackgroundServices
              {
                  var content = System.Text.Encoding.UTF8.GetString(ea.Body.ToArray());
 
-                 //Deserilized Message
                 var message = Encoding.UTF8.GetString(ea.Body.ToArray());
 
-                 var data = JsonConvert.DeserializeObject<object>(message);
+                 var data = JsonConvert.DeserializeObject<T>(message);
+
+                 Notify(data);
 
                  _channel.BasicAck(ea.DeliveryTag, false);
              };
@@ -54,6 +56,10 @@ namespace SISTEMALEGADO.BackgroundServices
             _channel.BasicConsume(StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueName"], false, consumer);
 
             return Task.CompletedTask;
+        }
+        private void Notify(T data)
+        {
+            //using(var scope = _serviceProvider.CreateScope(data))
         }
     }
 }

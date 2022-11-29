@@ -1,5 +1,6 @@
 using SISTEMALEGADO.BackgroundServices;
 using SISTEMALEGADO.Data;
+using SISTEMALEGADO.Model;
 using SISTEMALEGADO.Service;
 using SISTEMALEGADO.Services;
 using Swashbuckle.AspNetCore.Filters;
@@ -16,7 +17,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddDbContext<LegadoContext>();
-builder.Services.AddHostedService<RabbitMQBackgroundConsumerService>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
 
 
 builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
