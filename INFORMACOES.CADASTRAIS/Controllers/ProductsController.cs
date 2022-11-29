@@ -1,4 +1,4 @@
-﻿using INFORMACOESCADASTRAIS.Services;
+﻿using INFORMACOESCADASTRAIS.RabbitMQService;
 using Microsoft.AspNetCore.Mvc;
 using ProductOwner.Microservice.Model;
 
@@ -8,9 +8,9 @@ namespace INFORMACOESCADASTRAIS.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly ProductService productService;
+        private readonly RabbitMQPublisherService productService;
 
-        public ProductsController(ProductService _productService)
+        public ProductsController(RabbitMQPublisherService _productService)
         {
             productService = _productService;
         }

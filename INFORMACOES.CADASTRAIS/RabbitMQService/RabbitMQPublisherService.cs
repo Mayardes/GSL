@@ -5,13 +5,13 @@ using ProductOwner.Microservice.Utility;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace INFORMACOESCADASTRAIS.Services
+namespace INFORMACOESCADASTRAIS.RabbitMQService
 {
-    public class ProductService
+    public class RabbitMQPublisherService
     {
         private readonly CadastroContext _dbContext;
 
-        public ProductService(CadastroContext dbContext)
+        public RabbitMQPublisherService(CadastroContext dbContext)
         {
             _dbContext = dbContext;
         }
