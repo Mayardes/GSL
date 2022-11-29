@@ -1,0 +1,195 @@
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.Development.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.exe
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.deps.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.runtimeconfig.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.pdb
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Humanizer.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\MassTransit.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\MassTransit.Abstractions.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\RabbitMQ.Client.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Text.Json.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\SharedLibrary.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\SharedLibrary.pdb
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.AssemblyReference.cache
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.GeneratedMSBuildEditorConfig.editorconfig
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfoInputs.cache
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfo.cs
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CoreCompileInputs.cache
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cs
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cache
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.build.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.development.json
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\scopedcss\bundle\ProductUser.Microservice.styles.css
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CopyComplete
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\refint\ProductUser.Microservice.dll
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.pdb
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.genruntimeconfig.cache
+D:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ref\ProductUser.Microservice.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.Development.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.exe
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.deps.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.runtimeconfig.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.pdb
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Humanizer.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\RabbitMQ.Client.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Drawing.Common.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Runtime.Caching.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Windows.Extensions.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.AssemblyReference.cache
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.GeneratedMSBuildEditorConfig.editorconfig
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfoInputs.cache
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfo.cs
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CoreCompileInputs.cache
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cs
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cache
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.build.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.development.json
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\scopedcss\bundle\ProductUser.Microservice.styles.css
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CopyComplete
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\refint\ProductUser.Microservice.dll
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.pdb
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.genruntimeconfig.cache
+F:\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ref\ProductUser.Microservice.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\appsettings.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.exe
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.deps.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.runtimeconfig.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\ProductUser.Microservice.pdb
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.AssemblyReference.cache
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfoInputs.cache
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.AssemblyInfo.cs
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CoreCompileInputs.cache
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\scopedcss\bundle\ProductUser.Microservice.styles.css
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.csproj.CopyComplete
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\refint\ProductUser.Microservice.dll
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.pdb
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ProductUser.Microservice.genruntimeconfig.cache
+C:\Users\Mayardes Oliveira\Documents\api\MicroservicesRabbitMQ\ProductUser.Microservice\obj\Debug\net6.0\ref\ProductUser.Microservice.dll
