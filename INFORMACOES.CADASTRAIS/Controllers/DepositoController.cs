@@ -1,6 +1,7 @@
 ﻿using INFORMACOESCADASTRAIS.Controllers.RequestExemples;
 using INFORMACOESCADASTRAIS.Dto;
 using INFORMACOESCADASTRAIS.Model;
+using INFORMACOESCADASTRAIS.RabbitMQService;
 using INFORMACOESCADASTRAIS.Service;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
@@ -12,9 +13,11 @@ namespace INFORMACOESCADASTRAIS.Controllers
     public class DepositoController : ControllerBase
     {
         private readonly DepositoServices _DepositoService;
-        public DepositoController(DepositoServices DepositoService)
+        private readonly RabbitMQPublisherService<Deposito> _rabbitMQPublisherService;
+        public DepositoController(DepositoServices DepositoService, RabbitMQPublisherService<Deposito> rabbitMQPublisherService)
         {
             _DepositoService = DepositoService;
+            _rabbitMQPublisherService = rabbitMQPublisherService;
         }
 
         [HttpGet("obter")]
@@ -45,6 +48,7 @@ namespace INFORMACOESCADASTRAIS.Controllers
 
             try
             {
+                await _rabbitMQPublisherService.SendModel(deposito);
                 await _DepositoService.CadastrarAsync(deposito);
                 return Ok(depositoDto);
             }

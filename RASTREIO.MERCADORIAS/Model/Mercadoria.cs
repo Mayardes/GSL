@@ -12,14 +12,8 @@ namespace RASTREIOMERCADORIAS.Model
         public Cliente Cliente { get; set; }
         public Fornecedor Fornecedor { get; set; }
         public Deposito Deposito { get; set; }
-
-        [JsonIgnore]
         public Guid ClienteId { get; set; }
-
-        [JsonIgnore]
         public Guid FornecedorId { get; set; }
-
-        [JsonIgnore]
         public Guid DepositoId { get; set; }
     }
 }

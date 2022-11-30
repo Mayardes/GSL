@@ -6,16 +6,17 @@ using SISTEMALEGADO.Service;
 using SISTEMALEGADO.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
+//ignora listas circulares
+builder.Services.AddControllers().AddJsonOptions(x =>
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 //Instancia do Banco de Dados
 builder.Services.AddDbContext<LegadoContext>();
-
-builder.Services.AddControllers();
 
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();

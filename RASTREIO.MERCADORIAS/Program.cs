@@ -6,6 +6,7 @@ using RASTREIOMERCADORIAS.Service;
 using RASTREIOMERCADORIAS.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,11 @@ builder.Services.AddSwaggerExamplesFromAssemblies(Assembly.GetEntryAssembly());
 builder.Services.AddSwaggerGen(options => {
     options.ExampleFilters();
 });
+
+//ignora listas circulares
+builder.Services.AddControllers().AddJsonOptions(x =>
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
 
 var app = builder.Build();
 

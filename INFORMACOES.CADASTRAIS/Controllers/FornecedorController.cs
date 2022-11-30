@@ -1,6 +1,7 @@
 ﻿using INFORMACOESCADASTRAIS.Controllers.RequestExemples;
 using INFORMACOESCADASTRAIS.Dto;
 using INFORMACOESCADASTRAIS.Model;
+using INFORMACOESCADASTRAIS.RabbitMQService;
 using INFORMACOESCADASTRAIS.Service;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
@@ -12,9 +13,11 @@ namespace INFORMACOESCADASTRAIS.Controllers
     public class FornecedorController : ControllerBase
     {
         private readonly FornecedorServices _fornecedor;
-        public FornecedorController(FornecedorServices fornecedorService)
+        private readonly RabbitMQPublisherService<Fornecedor> _rabbitMQPublisherService;
+        public FornecedorController(FornecedorServices fornecedorService, RabbitMQPublisherService<Fornecedor> rabbitMQPublisherService)
         {
             _fornecedor = fornecedorService;
+            _rabbitMQPublisherService = rabbitMQPublisherService;
         }
 
         [HttpGet("obter")]
@@ -48,6 +51,7 @@ namespace INFORMACOESCADASTRAIS.Controllers
 
             try
             {
+                await _rabbitMQPublisherService.SendModel(fornecedor);
                 await _fornecedor.CadastrarAsync(fornecedor);
                 return Ok(fornecedorDto);
             }
