@@ -1,4 +1,5 @@
 ﻿using CALCULOFRETE.Service;
+using CALCULOFRETE.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CALCULOFRETE.Controllers
@@ -17,7 +18,8 @@ namespace CALCULOFRETE.Controllers
         public async Task<IActionResult> ObterPorIdAsync(string cpf)
         {
             var cliente = await _clienteServices.ObterPorCpfAsync(cpf);
-            return Ok(cliente);
+            var valorCalculado = CalculoFreteService.Calcular(cliente);
+            return Ok(valorCalculado);
         }
     }
 }

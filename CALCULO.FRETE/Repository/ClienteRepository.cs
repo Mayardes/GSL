@@ -12,9 +12,9 @@ namespace CALCULOFRETE.Repositories
         {
             _context = context;
         }
-        public async Task<IEnumerable<Cliente>> ObterPorCpfAsync(string cpf)
+        public async Task<Cliente> ObterPorCpfAsync(string cpf)
         {
-            return await _context.Clientes.AsNoTracking().Where(x => x.CpfCnpj == cpf).ToListAsync();
+            return await _context.Clientes.AsNoTracking().FirstAsync(x => x.CpfCnpj == cpf);
         }
         public async Task<Cliente> CadastrarAsync(Cliente entity)
         {
