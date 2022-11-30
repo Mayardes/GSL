@@ -65,5 +65,12 @@ namespace RASTREIOMERCADORIAS.Repositories
             await _context.SaveChangesAsync();
             return resultClient;
         }
+        public async Task<Mercadoria> RastrearMercadoriaPorIdAsync(Guid id)
+        {
+            var resultClient = await _context.Mercadorias.Include(x => x.Cliente)
+                .Include(x => x.Fornecedor).Include(x => x.Deposito).FirstOrDefaultAsync(x => x.Id == id)
+              ?? throw new Exception("Not found");
+            return resultClient;
+        }
     }
 }
