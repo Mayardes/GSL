@@ -5,7 +5,7 @@ namespace CALCULOFRETE.Service
 {
     public class ClienteServices : ClienteRepository
     {
-        public ClienteServices(LegadoContext context) : base(context)
+        public ClienteServices(FreteClienteDBContext context) : base(context)
         {
         }
     }

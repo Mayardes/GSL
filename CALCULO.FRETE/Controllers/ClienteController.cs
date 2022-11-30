@@ -1,82 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using CALCULOFRETE.Controllers.RequestExemples;
-using CALCULOFRETE.Model;
-using CALCULOFRETE.RabbitMQService;
-using CALCULOFRETE.Service;
-using Swashbuckle.AspNetCore.Filters;
+﻿using CALCULOFRETE.Service;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CALCULOFRETE.Controllers
 {
     [ApiController]
-    [Route("v1/clientes")]
+    [Route("v1/cliente")]
     public class ClienteController : ControllerBase
     {
-        private readonly ClienteServices _clienteService;
-        private readonly RabbitMQPublisherService<Cliente> _rabbitMQPublisherService;
-        public ClienteController(ClienteServices clienteService, RabbitMQPublisherService<Cliente> rabbitMQPublisherService)
+        private readonly ClienteServices _clienteServices;
+        public ClienteController(ClienteServices clienteServices)
         {
-            _clienteService = clienteService;
-            _rabbitMQPublisherService = rabbitMQPublisherService;
+            _clienteServices = clienteServices;
         }
 
-        [HttpGet("obter")]
-        public async Task<IActionResult> ObterAsync()
+        [HttpPost("obterPorCpf")]
+        public async Task<IActionResult> ObterPorIdAsync(string cpf)
         {
-            var cliente = await _clienteService.ObterAsync();
+            var cliente = await _clienteServices.ObterPorCpfAsync(cpf);
             return Ok(cliente);
-        }
-
-        [HttpPost("obterPorId")]
-        public async Task<IActionResult> ObterPorIdAsync(Guid id)
-        {
-            var cliente = await _clienteService.ObterPorIdAsync(id);
-            return Ok(cliente);
-        }
-
-        [HttpPost("cadastrar")]
-        [SwaggerRequestExample(typeof(Cliente), typeof(ClienteCadastrarRequestExamples))]
-        public async Task<IActionResult> CadastrarAsync([FromBody] Cliente cliente)
-        {
-            try
-            {
-                 var result = await _clienteService.CadastrarAsync(cliente);
-                await _rabbitMQPublisherService.SendModel(cliente);
-
-                return Ok(cliente);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-
-        [HttpPost("atualizar")]
-        [SwaggerRequestExample(typeof(Cliente), typeof(ClienteAtualizarRequestExamples))]
-        public async Task<IActionResult> AtualizarAsync([FromBody] Cliente cliente, Guid id)
-        {
-            try
-            {
-                await _clienteService.AtualizarAsync(cliente, id);
-                return Ok(cliente);
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
-        }
-
-        [HttpDelete("remover")]
-        public async Task<IActionResult> RemoverAsync(Guid id)
-        {
-            try
-            {
-                await _clienteService.RemoverAsync(id);
-                return Ok();
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message);
-            }
         }
     }
 }

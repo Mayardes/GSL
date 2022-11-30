@@ -7,47 +7,23 @@ namespace CALCULOFRETE.Repositories
 {
     public class ClienteRepository : IRepository<Cliente>
     {
-        private readonly LegadoContext _context;
-        public ClienteRepository(LegadoContext context)
+        private readonly FreteClienteDBContext _context;
+        public ClienteRepository(FreteClienteDBContext context)
         {
             _context = context;
         }
-        public async Task<Cliente> AtualizarAsync(Cliente entity, Guid id)
+        public async Task<IEnumerable<Cliente>> ObterPorCpfAsync(string cpf)
         {
-            var resultClient = await _context.Clientes.FirstOrDefaultAsync(x => x.Id == id)
-              ?? throw new Exception("Not found");
-
-            _context.ChangeTracker.Clear();
-            _context.Update(entity);
-            await _context.SaveChangesAsync();
-            return entity;
+            return await _context.Clientes.AsNoTracking().Where(x => x.CpfCnpj == cpf).ToListAsync();
         }
         public async Task<Cliente> CadastrarAsync(Cliente entity)
         {
-            if(entity == null)
+            if (entity == null)
                 throw new ArgumentNullException();
 
             _context.Clientes.Add(entity);
             await _context.SaveChangesAsync();
             return entity;
         }
-        public async Task<IEnumerable<Cliente>> ObterAsync()
-        {
-            return await _context.Clientes.AsNoTracking().ToListAsync();
-        }
-        public async Task<IEnumerable<Cliente>> ObterPorIdAsync(Guid id)
-        {
-            return await _context.Clientes.AsNoTracking().Where(x => x.Id == id).ToListAsync();
-        }
-        public async Task<Cliente> RemoverAsync(Guid id)
-        {
-            var resultClient = await _context.Clientes.FirstOrDefaultAsync(x => x.Id == id)
-              ?? throw new Exception("Not found");
-            _context.Clientes.Remove(resultClient);
-            await _context.SaveChangesAsync();
-            return resultClient;
-        }
-
-
     }
 }

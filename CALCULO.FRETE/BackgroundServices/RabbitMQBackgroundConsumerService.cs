@@ -1,8 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿using CALCULOFRETE.Services;
+using Newtonsoft.Json;
 using ProductUser.Microservice.Utility;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
-using CALCULOFRETE.Services;
 using System.Text;
 
 namespace CALCULOFRETE.BackgroundServices

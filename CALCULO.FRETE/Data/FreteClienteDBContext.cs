@@ -3,11 +3,11 @@ using CALCULOFRETE.Model;
 
 namespace CALCULOFRETE.Data
 {
-    public class LegadoContext : DbContext
+    public class FreteClienteDBContext : DbContext
     {
         protected readonly IConfiguration Configuration;
 
-        public LegadoContext(IConfiguration configuration)
+        public FreteClienteDBContext(IConfiguration configuration)
         {
             Configuration = configuration;
             Database.EnsureCreated();
@@ -16,12 +16,7 @@ namespace CALCULOFRETE.Data
         {
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
         }
-
-        public DbSet<ProductOfferDetail> ProductOffers { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Deposito> Depositos { get; set; }
-        public DbSet<Fornecedor> Fornecedores { get; set; }
-        public DbSet<Mercadoria> Mercadorias { get; set; }
 
     }
 }

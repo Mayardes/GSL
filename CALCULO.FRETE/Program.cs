@@ -3,7 +3,6 @@ using CALCULOFRETE.Data;
 using CALCULOFRETE.Model;
 using CALCULOFRETE.RabbitMQService;
 using CALCULOFRETE.Service;
-using CALCULOFRETE.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 
@@ -13,18 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 //Instancia do Banco de Dados
-builder.Services.AddDbContext<LegadoContext>();
+builder.Services.AddDbContext<FreteClienteDBContext>();
 
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
-builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
-
 builder.Services.AddScoped<ClienteServices>();
-builder.Services.AddScoped<DepositoServices>();
-builder.Services.AddScoped<FornecedorServices>();
-builder.Services.AddScoped<MercadoriaServices>();
 
 
 builder.Services.AddControllers();
