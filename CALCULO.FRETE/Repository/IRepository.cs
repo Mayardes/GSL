@@ -1,4 +1,4 @@
-﻿namespace SISTEMALEGADO.Interfaces
+﻿namespace CALCULOFRETE.Interfaces
 {
     public interface IRepository<TEntity> where TEntity : class
     {

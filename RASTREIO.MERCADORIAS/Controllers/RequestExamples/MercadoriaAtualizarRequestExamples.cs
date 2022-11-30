@@ -1,8 +1,8 @@
 ﻿using Bogus;
-using INFORMACOESCADASTRAIS.Model;
+using RASTREIOMERCADORIAS.Model;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace INFORMACOESCADASTRAIS.Controllers.RequestExemples
+namespace RASTREIOMERCADORIAS.Controllers.RequestExemples
 {
     public class MercadoriaAtualizarRequestExamples : IExamplesProvider<Mercadoria>
     {

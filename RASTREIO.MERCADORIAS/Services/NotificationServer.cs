@@ -1,7 +1,7 @@
-﻿using INFORMACOESCADASTRAIS.Model;
-using INFORMACOESCADASTRAIS.Service;
+﻿using RASTREIOMERCADORIAS.Model;
+using RASTREIOMERCADORIAS.Service;
 
-namespace INFORMACOESCADASTRAIS.Services
+namespace RASTREIOMERCADORIAS.Services
 {
     public interface INotificationServer<T>
     {

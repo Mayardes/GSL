@@ -1,11 +1,11 @@
-﻿using INFORMACOESCADASTRAIS.Controllers.RequestExemples;
-using INFORMACOESCADASTRAIS.Model;
-using INFORMACOESCADASTRAIS.RabbitMQService;
-using INFORMACOESCADASTRAIS.Service;
+﻿using RASTREIOMERCADORIAS.Controllers.RequestExemples;
+using RASTREIOMERCADORIAS.Model;
+using RASTREIOMERCADORIAS.RabbitMQService;
+using RASTREIOMERCADORIAS.Service;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace INFORMACOESCADASTRAIS.Controllers
+namespace RASTREIOMERCADORIAS.Controllers
 {
     [ApiController]
     [Route("v1/clientes")]

@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SISTEMALEGADO.Data;
-using SISTEMALEGADO.Interfaces;
-using SISTEMALEGADO.Model;
+using CALCULOFRETE.Data;
+using CALCULOFRETE.Interfaces;
+using CALCULOFRETE.Model;
 
-namespace SISTEMALEGADO.Repositories
+namespace CALCULOFRETE.Repositories
 {
     public class ClienteRepository : IRepository<Cliente>
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SISTEMALEGADO.Model;
+using CALCULOFRETE.Model;
 
-namespace SISTEMALEGADO.Data
+namespace CALCULOFRETE.Data
 {
     public class LegadoContext : DbContext
     {

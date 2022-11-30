@@ -1,9 +1,9 @@
 ﻿using Bogus;
 using Bogus.Extensions.Brazil;
-using INFORMACOESCADASTRAIS.Dto;
+using RASTREIOMERCADORIAS.Dto;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace INFORMACOESCADASTRAIS.Controllers.RequestExemples
+namespace RASTREIOMERCADORIAS.Controllers.RequestExemples
 {
     public class FornecedorCadastrarRequestExamples : IExamplesProvider<FornecedorDto>
     {

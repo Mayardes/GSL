@@ -1,7 +1,7 @@
-﻿using SISTEMALEGADO.Model;
-using SISTEMALEGADO.Service;
+﻿using CALCULOFRETE.Model;
+using CALCULOFRETE.Service;
 
-namespace SISTEMALEGADO.Services
+namespace CALCULOFRETE.Services
 {
     public interface INotificationServer<T>
     {

@@ -1,7 +1,7 @@
-﻿using SISTEMALEGADO.Data;
-using SISTEMALEGADO.Repositories;
+﻿using CALCULOFRETE.Data;
+using CALCULOFRETE.Repositories;
 
-namespace SISTEMALEGADO.Service
+namespace CALCULOFRETE.Service
 {
     public class ClienteServices : ClienteRepository
     {

@@ -1,11 +1,11 @@
-﻿using INFORMACOESCADASTRAIS.Data;
-using INFORMACOESCADASTRAIS.Model;
+﻿using RASTREIOMERCADORIAS.Data;
+using RASTREIOMERCADORIAS.Model;
 using Newtonsoft.Json;
 using ProductOwner.Microservice.Utility;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace INFORMACOESCADASTRAIS.RabbitMQService
+namespace RASTREIOMERCADORIAS.RabbitMQService
 {
     public class RabbitMQPublisherService<T> where T : class
     {

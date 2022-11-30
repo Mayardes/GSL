@@ -1,4 +1,4 @@
-﻿namespace INFORMACOESCADASTRAIS.Model
+﻿namespace RASTREIOMERCADORIAS.Model
 {
     public class Cliente
     {

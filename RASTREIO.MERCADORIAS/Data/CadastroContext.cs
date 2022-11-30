@@ -1,7 +1,7 @@
-﻿using INFORMACOESCADASTRAIS.Model;
+﻿using RASTREIOMERCADORIAS.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace INFORMACOESCADASTRAIS.Data
+namespace RASTREIOMERCADORIAS.Data
 {
     public class CadastroContext : DbContext
     {

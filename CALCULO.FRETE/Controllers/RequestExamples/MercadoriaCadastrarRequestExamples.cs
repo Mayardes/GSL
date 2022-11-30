@@ -1,8 +1,8 @@
 ﻿using Bogus;
-using SISTEMALEGADO.Model;
+using CALCULOFRETE.Model;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace SISTEMALEGADO.Controllers.RequestExemples
+namespace CALCULOFRETE.Controllers.RequestExemples
 {
     public class MercadoriaCadastrarRequestExamples : IExamplesProvider<Mercadoria>
     {

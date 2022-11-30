@@ -3,7 +3,7 @@ using ProductUser.Microservice.Utility;
 using RabbitMQ.Client;
 using System.Text;
 
-namespace SISTEMALEGADO.RabbitMQService
+namespace CALCULOFRETE.RabbitMQService
 {
     public class RabbitMQPublisherService<T> where T : class
     {

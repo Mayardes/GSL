@@ -1,7 +1,7 @@
-﻿using INFORMACOESCADASTRAIS.Data;
-using INFORMACOESCADASTRAIS.Repositories;
+﻿using RASTREIOMERCADORIAS.Data;
+using RASTREIOMERCADORIAS.Repositories;
 
-namespace INFORMACOESCADASTRAIS.Service
+namespace RASTREIOMERCADORIAS.Service
 {
     public class MercadoriaServices : MercadoriaRepository
     {

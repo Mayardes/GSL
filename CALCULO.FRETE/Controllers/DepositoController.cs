@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SISTEMALEGADO.Controllers.RequestExemples;
-using SISTEMALEGADO.Dto;
-using SISTEMALEGADO.Model;
-using SISTEMALEGADO.Service;
+using CALCULOFRETE.Controllers.RequestExemples;
+using CALCULOFRETE.Dto;
+using CALCULOFRETE.Model;
+using CALCULOFRETE.Service;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace SISTEMALEGADO.Controllers
+namespace CALCULOFRETE.Controllers
 {
     [ApiController]
     [Route("v1/depositos")]

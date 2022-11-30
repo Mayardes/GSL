@@ -1,9 +1,9 @@
-using INFORMACOESCADASTRAIS.BackgroundServices;
-using INFORMACOESCADASTRAIS.Data;
-using INFORMACOESCADASTRAIS.Model;
-using INFORMACOESCADASTRAIS.RabbitMQService;
-using INFORMACOESCADASTRAIS.Service;
-using INFORMACOESCADASTRAIS.Services;
+using RASTREIOMERCADORIAS.BackgroundServices;
+using RASTREIOMERCADORIAS.Data;
+using RASTREIOMERCADORIAS.Model;
+using RASTREIOMERCADORIAS.RabbitMQService;
+using RASTREIOMERCADORIAS.Service;
+using RASTREIOMERCADORIAS.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 

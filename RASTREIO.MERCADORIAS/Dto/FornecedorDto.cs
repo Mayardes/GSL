@@ -1,5 +1,5 @@
 ﻿
-namespace INFORMACOESCADASTRAIS.Dto
+namespace RASTREIOMERCADORIAS.Dto
 {
     public class FornecedorDto
     {

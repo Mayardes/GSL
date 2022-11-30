@@ -1,8 +1,8 @@
 ﻿using Bogus;
-using INFORMACOESCADASTRAIS.Dto;
+using RASTREIOMERCADORIAS.Dto;
 using Swashbuckle.AspNetCore.Filters;
 
-namespace INFORMACOESCADASTRAIS.Controllers.RequestExemples
+namespace RASTREIOMERCADORIAS.Controllers.RequestExemples
 {
     public class DepositoCadastrarRequestExamples : IExamplesProvider<DepositoDto>
     {

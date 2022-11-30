@@ -1,11 +1,11 @@
-﻿using INFORMACOESCADASTRAIS.Services;
+﻿using RASTREIOMERCADORIAS.Services;
 using Newtonsoft.Json;
 using ProductOwner.Microservice.Utility;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-namespace INFORMACOESCADASTRAIS.BackgroundServices
+namespace RASTREIOMERCADORIAS.BackgroundServices
 {
     public class RabbitMQBackgroundConsumerService<T> : BackgroundService
     {

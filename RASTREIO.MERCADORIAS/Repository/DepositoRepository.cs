@@ -1,9 +1,9 @@
-﻿using INFORMACOESCADASTRAIS.Data;
-using INFORMACOESCADASTRAIS.Interfaces;
-using INFORMACOESCADASTRAIS.Model;
+﻿using RASTREIOMERCADORIAS.Data;
+using RASTREIOMERCADORIAS.Interfaces;
+using RASTREIOMERCADORIAS.Model;
 using Microsoft.EntityFrameworkCore;
 
-namespace INFORMACOESCADASTRAIS.Repositories
+namespace RASTREIOMERCADORIAS.Repositories
 {
     public class DepositoRepository : IRepository<Deposito>
     {
