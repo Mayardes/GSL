@@ -2570,11 +2570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\puc\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
+      "projectUniqueName": "C:\\Projetos\\puc2\\GSL\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
       "projectName": "INFORMACOESCADASTRAIS",
-      "projectPath": "C:\\Projetos\\puc\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
+      "projectPath": "C:\\Projetos\\puc2\\GSL\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
       "packagesPath": "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\puc\\INFORMACOES.CADASTRAIS\\obj\\",
+      "outputPath": "C:\\Projetos\\puc2\\GSL\\INFORMACOES.CADASTRAIS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

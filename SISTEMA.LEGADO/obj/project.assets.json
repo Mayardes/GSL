@@ -2570,11 +2570,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\puc\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
+      "projectUniqueName": "C:\\Projetos\\puc2\\GSL\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
       "projectName": "SISTEMALEGADO",
-      "projectPath": "C:\\Projetos\\puc\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
+      "projectPath": "C:\\Projetos\\puc2\\GSL\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
       "packagesPath": "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\puc\\SISTEMA.LEGADO\\obj\\",
+      "outputPath": "C:\\Projetos\\puc2\\GSL\\SISTEMA.LEGADO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

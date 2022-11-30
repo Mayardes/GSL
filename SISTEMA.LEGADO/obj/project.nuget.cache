@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CTciN+AtxxpDJvMknfJhUNaTXTkKWTUX1PhkFTODqMN2wyFEzGo7YyPrLGPoK5gR1b3eDF3hzGSKtf8B2ELBHA==",
+  "dgSpecHash": "fGKfFbOMq4tF6JUPj0GLJhl+1nSbueeyzoRMecKsG+DH6uMFUrLNV6tGWJM38wIc3jcsHURCMVvked76a4xqkQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\puc\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
+  "projectFilePath": "C:\\Projetos\\puc2\\GSL\\SISTEMA.LEGADO\\SISTEMALEGADO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

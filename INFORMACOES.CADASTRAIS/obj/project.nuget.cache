@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OOgyF1ttYi+ghsaPqeoImPYFnCxVbQl/L9+WpZsHgzm9uFHy7SVkgjKz/DitJpLzk0gfGdFN3Ktfak1ZpR5vlA==",
+  "dgSpecHash": "W7oIeLazXW6O3VGxP6G5gsEInsiAnKvh7zNzmMAxn4iXbtlzBhtdnpqeVAHkDmogNQ5hI/vT90Qdlx/jP26t4g==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\puc\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
+  "projectFilePath": "C:\\Projetos\\puc2\\GSL\\INFORMACOES.CADASTRAIS\\INFORMACOESCADASTRAIS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\Mayardes Oliveira\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
