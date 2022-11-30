@@ -25,6 +25,7 @@ builder.Services.AddDbContext<CadastroContext>();
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
 builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
+builder.Services.AddScoped<RabbitMQPublisherService<Fornecedor>>();
 
 builder.Services.AddScoped<ClienteServices>();
 builder.Services.AddScoped<DepositoServices>();
