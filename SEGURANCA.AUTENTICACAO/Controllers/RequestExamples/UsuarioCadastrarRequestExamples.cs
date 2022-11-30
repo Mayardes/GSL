@@ -1,24 +1,23 @@
 ﻿using Bogus;
 using Bogus.Extensions.Brazil;
+using SEGURANCAAUTENTICACAO.Enum;
 using SEGURANCAAUTENTICACAO.Model;
 using Swashbuckle.AspNetCore.Filters;
 
 namespace SEGURANCAAUTENTICACAO.Controllers.RequestExemples
 {
-    public class ClienteAtualizarRequestExamples : IExamplesProvider<Cliente>
+    public class UsuarioCadastrarRequestExamples : IExamplesProvider<Usuario>
     {
-        public Cliente GetExamples()
+        public Usuario GetExamples()
         {
             var faker = new Faker("pt_BR");
 
-            return new Cliente()
+            return new Usuario()
             {
                 Id = Guid.NewGuid(),
                 Nome = faker.Person.FullName,
-                Contato = faker.Person.Phone,
-                CpfCnpj = faker.Person.Cpf().Replace(".","").Replace("-",""),
-                Email = faker.Person.Email,
-                CEP = faker.Address.ZipCode()
+                Senha = "",
+                Perfil = PerfilEnum.Administrador
             };
         }
     }

@@ -3,9 +3,9 @@ using SEGURANCAAUTENTICACAO.Repositories;
 
 namespace SEGURANCAAUTENTICACAO.Service
 {
-    public class ClienteServices : ClienteRepository
+    public class UsuarioServices : UsuarioRepository
     {
-        public ClienteServices(LegadoContext context) : base(context)
+        public UsuarioServices(LoginContext context) : base(context)
         {
         }
     }

@@ -16,16 +16,13 @@ builder.Services.AddControllers().AddJsonOptions(x =>
    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
 //Instancia do Banco de Dados
-builder.Services.AddDbContext<LegadoContext>();
+builder.Services.AddDbContext<LoginContext>();
 
-builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
-builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
-builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
+builder.Services.AddScoped<RabbitMQPublisherService<Usuario>>();
+//builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Usuario>>();
+builder.Services.AddScoped<INotificationServer<Usuario>, NotificationServer<Usuario>>();
 
-builder.Services.AddScoped<ClienteServices>();
-builder.Services.AddScoped<DepositoServices>();
-builder.Services.AddScoped<FornecedorServices>();
-builder.Services.AddScoped<MercadoriaServices>();
+builder.Services.AddScoped<UsuarioServices>();
 
 
 builder.Services.AddControllers();
