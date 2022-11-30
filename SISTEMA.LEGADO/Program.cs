@@ -1,6 +1,7 @@
 using SISTEMALEGADO.BackgroundServices;
 using SISTEMALEGADO.Data;
 using SISTEMALEGADO.Model;
+using SISTEMALEGADO.RabbitMQService;
 using SISTEMALEGADO.Service;
 using SISTEMALEGADO.Services;
 using Swashbuckle.AspNetCore.Filters;
@@ -16,6 +17,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<LegadoContext>();
+builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
 builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
 

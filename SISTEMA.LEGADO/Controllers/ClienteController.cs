@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SISTEMALEGADO.Controllers.RequestExemples;
 using SISTEMALEGADO.Model;
+using SISTEMALEGADO.RabbitMQService;
 using SISTEMALEGADO.Service;
 using Swashbuckle.AspNetCore.Filters;
 
@@ -11,9 +12,11 @@ namespace SISTEMALEGADO.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly ClienteServices _clienteService;
-        public ClienteController(ClienteServices clienteService)
+        private readonly RabbitMQPublisherService<Cliente> _rabbitMQPublisherService;
+        public ClienteController(ClienteServices clienteService, RabbitMQPublisherService<Cliente> rabbitMQPublisherService)
         {
             _clienteService = clienteService;
+            _rabbitMQPublisherService = rabbitMQPublisherService;
         }
 
         [HttpGet("obter")]
@@ -37,6 +40,7 @@ namespace SISTEMALEGADO.Controllers
             try
             {
                  var result = await _clienteService.CadastrarAsync(cliente);
+                await _rabbitMQPublisherService.SendModel(cliente);
 
                 return Ok(cliente);
             }
