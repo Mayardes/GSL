@@ -3,6 +3,7 @@ using CALCULOFRETE.Data;
 using CALCULOFRETE.Model;
 using CALCULOFRETE.RabbitMQService;
 using CALCULOFRETE.Service;
+using CALCULOFRETE.Services;
 using Swashbuckle.AspNetCore.Filters;
 using System.Reflection;
 
@@ -18,6 +19,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
+builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
 builder.Services.AddScoped<ClienteServices>();
 
 

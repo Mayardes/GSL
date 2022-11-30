@@ -21,7 +21,7 @@ namespace CALCULOFRETE.Controllers
         {
             try
             {
-                
+
 
                 return Ok(cliente);
             }
