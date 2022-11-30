@@ -14,7 +14,6 @@ namespace SEGURANCAAUTENTICACAO.Controllers.RequestExemples
 
             return new Usuario()
             {
-                Id = Guid.NewGuid(),
                 Nome = faker.Person.FullName,
                 Senha = "",
                 Perfil = PerfilEnum.Administrador

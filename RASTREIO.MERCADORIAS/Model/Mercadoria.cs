@@ -15,5 +15,6 @@ namespace RASTREIOMERCADORIAS.Model
         public Guid ClienteId { get; set; }
         public Guid FornecedorId { get; set; }
         public Guid DepositoId { get; set; }
+        public string DescricaoStatus { get; set;}
     }
 }

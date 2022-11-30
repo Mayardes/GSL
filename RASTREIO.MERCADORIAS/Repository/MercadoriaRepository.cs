@@ -72,5 +72,16 @@ namespace RASTREIOMERCADORIAS.Repositories
               ?? throw new Exception("Not found");
             return resultClient;
         }
+        public async Task<Mercadoria> InserirStatusAsync(Guid Id,string status)
+        {
+            var mercadoria = _context.Mercadorias.AsNoTracking().FirstOrDefault(x => x.Id == Id)
+                ?? throw new Exception("Mercadoria doesn't exists");
+
+            mercadoria.Descricao = status;
+
+            _context.Mercadorias.Add(mercadoria);
+            await _context.SaveChangesAsync();
+            return mercadoria;
+        }
     }
 }

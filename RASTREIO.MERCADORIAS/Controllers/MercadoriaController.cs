@@ -20,5 +20,12 @@ namespace RASTREIOMERCADORIAS.Controllers
             var mercadoria = await _mercadoria.RastrearMercadoriaPorIdAsync(id);
             return Ok(mercadoria);
         }
+
+        [HttpPost("inserirStatus")]
+        public async Task<IActionResult> InserirStatusAsync(Guid id, string status)
+        {
+            var mercadoria = await _mercadoria.InserirStatusAsync(id, status);
+            return Ok(mercadoria);
+        }
     }
 }

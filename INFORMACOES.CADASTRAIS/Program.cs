@@ -22,10 +22,14 @@ builder.Services.AddDbContext<CadastroContext>();
 //Instancia do Banco de Dados
 builder.Services.AddDbContext<CadastroContext>();
 
-builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
+
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
 builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
+
+builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddScoped<RabbitMQPublisherService<Fornecedor>>();
+builder.Services.AddScoped<RabbitMQPublisherService<Deposito>>();
+builder.Services.AddScoped<RabbitMQPublisherService<Mercadoria>>();
 
 builder.Services.AddScoped<ClienteServices>();
 builder.Services.AddScoped<DepositoServices>();
