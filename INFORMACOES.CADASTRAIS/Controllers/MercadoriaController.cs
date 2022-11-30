@@ -1,5 +1,6 @@
 ﻿using INFORMACOESCADASTRAIS.Controllers.RequestExemples;
 using INFORMACOESCADASTRAIS.Model;
+using INFORMACOESCADASTRAIS.RabbitMQService;
 using INFORMACOESCADASTRAIS.Service;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Filters;
@@ -11,9 +12,11 @@ namespace INFORMACOESCADASTRAIS.Controllers
     public class MercadoriaController : ControllerBase
     {
         private readonly MercadoriaServices _mercadoria;
-        public MercadoriaController(MercadoriaServices mercadoriaService)
+        private readonly RabbitMQPublisherService<Mercadoria> _rabbitMQPublisherService;
+        public MercadoriaController(MercadoriaServices mercadoriaService, RabbitMQPublisherService<Mercadoria> rabbitMQPublisherService)
         {
             _mercadoria = mercadoriaService;
+            _rabbitMQPublisherService = rabbitMQPublisherService;
         }
 
         [HttpGet("obter")]
@@ -37,6 +40,8 @@ namespace INFORMACOESCADASTRAIS.Controllers
             try
             {
                 await _mercadoria.CadastrarAsync(mercadoria);
+                await _rabbitMQPublisherService.SendModel(mercadoria);
+
                 return Ok(mercadoria);
             }
             catch (Exception e)

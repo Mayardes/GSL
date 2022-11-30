@@ -24,7 +24,14 @@ builder.Services.AddScoped<MercadoriaServices>();
 //Chamar o serviço do outro módulo no RabbitMQ
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Deposito>>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Fornecedor>>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Mercadoria>>();
+
 builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
+builder.Services.AddScoped<INotificationServer<Deposito>, NotificationServer<Deposito>>();
+builder.Services.AddScoped<INotificationServer<Fornecedor>, NotificationServer<Fornecedor>>();
+builder.Services.AddScoped<INotificationServer<Mercadoria>, NotificationServer<Mercadoria>>();
 
 
 builder.Services.AddControllers();
