@@ -12,32 +12,26 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-//Instancia do Banco de Dados
-builder.Services.AddDbContext<CadastroContext>();
-
-//Instancia dos serviços
-builder.Services.AddScoped<ClienteServices>();
-builder.Services.AddScoped<DepositoServices>();
-builder.Services.AddScoped<FornecedorServices>();
-builder.Services.AddScoped<MercadoriaServices>();
-
-
-//Chamar o serviço do outro módulo no RabbitMQ
-builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
-builder.Services.AddScoped<RabbitMQPublisherService<Deposito>>();
-builder.Services.AddScoped<RabbitMQPublisherService<Fornecedor>>();
-builder.Services.AddScoped<RabbitMQPublisherService<Mercadoria>>();
-builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
-builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Mercadoria>>();
-builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
-
-
 //ignora listas circulares
 builder.Services.AddControllers().AddJsonOptions(x =>
    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 
+//Instancia do Banco de Dados
+builder.Services.AddDbContext<CadastroContext>();
+
+//Instancia do Banco de Dados
+builder.Services.AddDbContext<CadastroContext>();
+
+builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
+builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
+
+builder.Services.AddScoped<ClienteServices>();
+builder.Services.AddScoped<DepositoServices>();
+builder.Services.AddScoped<FornecedorServices>();
+builder.Services.AddScoped<MercadoriaServices>();
 //API
-builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddControllers();
 
 //Swagger
 builder.Services.AddSwaggerGen();
