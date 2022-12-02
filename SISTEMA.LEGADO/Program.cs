@@ -19,7 +19,10 @@ builder.Services.AddControllers().AddJsonOptions(x =>
 builder.Services.AddDbContext<LegadoContext>();
 
 builder.Services.AddScoped<RabbitMQPublisherService<Cliente>>();
+
 builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Cliente>>();
+builder.Services.AddHostedService<RabbitMQBackgroundConsumerService<Mercadoria>>();
+
 builder.Services.AddScoped<INotificationServer<Cliente>, NotificationServer<Cliente>>();
 
 builder.Services.AddScoped<ClienteServices>();

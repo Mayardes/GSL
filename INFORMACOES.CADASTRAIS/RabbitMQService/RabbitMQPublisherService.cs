@@ -20,15 +20,28 @@ namespace INFORMACOESCADASTRAIS.RabbitMQService
 
             using (var channel = connection.CreateModel())
             {
+                //DECLARA O EXCHANGE A SER CRIADO
+                channel.ExchangeDeclare(StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchangeName"], StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchhangeType"]);
+
                 channel.QueueDeclare(queue: StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueName"],
                                      durable: true,      //remains active when restarted server
                                      exclusive: false,    //only access on actual connection
                                      autoDelete: false,   //automatic deleted when consumers get message
                                      arguments: null);    //some arguments
 
+                //MONTA O BIND DA FILA COM O EXCHANGE
+                channel.QueueBind(queue: StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueFrete"], exchange: StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchangeName"], routingKey: StaticConfigurationManager.AppSetting["RabbitMqSettings:RouteKey"]);
+                channel.QueueBind(queue: StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueLegado"], exchange: StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchangeName"], routingKey: StaticConfigurationManager.AppSetting["RabbitMqSettings:RouteKey"]);
+                channel.QueueBind(queue: StaticConfigurationManager.AppSetting["RabbitMqSettings:QueueRastreio"], exchange: StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchangeName"], routingKey: StaticConfigurationManager.AppSetting["RabbitMqSettings:RouteKey"]);
+
+
                 var stringFieldMessage = JsonConvert.SerializeObject(modelo);
 
                 var bodyMessage = Encoding.UTF8.GetBytes(stringFieldMessage);
+
+                //SALVA
+                var properties = channel.CreateBasicProperties();
+                    properties.Persistent = true;
 
                 channel.BasicPublish(exchange: StaticConfigurationManager.AppSetting["RabbitMqSettings:ExchangeName"],
                                      routingKey: StaticConfigurationManager.AppSetting["RabbitMqSettings:RouteKey"],
